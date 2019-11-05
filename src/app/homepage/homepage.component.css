@@ -1,0 +1,51 @@
+.flight-form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.flight-list{
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
+    border: 1px solid #003b17;
+}
+h1 {
+    text-align: center;
+    color: #003b17;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+}
+.flight-form input[type="date"],
+.flight-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+.flight-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #003b17;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.inner-table{
+    width: 100%;
+    padding: 15px;
+}
+
+.bookbotton{
+    width: 100%;
+    padding: 15px;
+    background-color: #003b17;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}

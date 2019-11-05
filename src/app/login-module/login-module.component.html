@@ -6,10 +6,10 @@
 	</head>
 	<body>
 		<div class="login-form">
-			<h1>Login Form</h1>
-			<form action="auth" method="POST">
-				<input type="text" name="username" placeholder="Username" required>
-				<input type="password" name="password" placeholder="Password" required>
+			<h1>Login</h1>
+			<form [formGroup]="LoginForm" (ngSubmit)="Login()">
+				<input type="text" name="username" placeholder="Username" formControlName="username" required>
+				<input type="password" name="password" placeholder="Password" formControlName="password" required>
 				<input type="submit">
 			</form>
 		</div>

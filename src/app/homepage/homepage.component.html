@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+	</head>
+	<body>
+		<div class="flight-form">
+			<h1>Search your Flight</h1>
+			<form [formGroup]="FlightForm" (ngSubmit)="getFlights()">
+				<input type="text" name="source" placeholder="Source" formControlName="source" required>
+        <input type="text" name="destination" placeholder="Destination" formControlName="destination" required>
+        <input type="date" name="jdate" formControlName="jdate" required>
+				<input type="submit">
+			</form>
+		</div>
+		<h3>Available Flights</h3>
+		<table align="center" class="flight-list">
+			
+		<div *ngFor="let flist of flights; let id = index">
+			
+			<tr>
+					<table class="inner-table">
+						<tr>
+							<td>{{flist.source}}</td>
+							<td>{{flist.destination}}</td>
+							<td>{{flist.price}}</td>
+						</tr>
+						<tr>
+							<td>{{flist.dep_time}}</td>
+							<td>{{flist.arri_time}}</td>
+							<td>
+									<button class="bookbotton" (click)="bookFlight(flist.flightid)"> Book</button>
+							</td>
+						</tr>
+					</table>	
+			</tr>
+			<hr>
+		</div>
+
+
+		</table>
+	</body>
+</html>
